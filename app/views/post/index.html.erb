@@ -1,0 +1,33 @@
+<h1 class="py-4">Posts</h1>
+<table class="table">
+    <tr>
+    <th>Title</th>
+    <th>Created at</th>
+    <th>Image_url</th>
+    <th>Content</th>
+    </tr>
+    <% @posts.each do |post| %>
+        <tr>
+            <td><%= post.title %></td>
+            <td><%= post.created_at %></td>
+            <td><%= post.image_url %></td>
+            <td><%= post.content %></td>
+        </tr>
+    <% end %>
+</table>
+<h3 class="pt-4">Create a Post</h3>
+<form method="get" action="/post/create" id="create_posts" class="py-4">
+    <div class="form-group">
+        <label for="title">Title:</label>
+        <input name="title" type="string" class="form-control" id="title">
+    </div>
+    <div class="form-group">
+        <label for="image_url">Image_url:</label>
+        <input name="image_url" type="string" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="content">Content:</label>
+        <textarea name="content" type="string" class="form-control"> </textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
