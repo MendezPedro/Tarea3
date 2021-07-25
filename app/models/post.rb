@@ -10,3 +10,4 @@ class Post < ApplicationRecord
         #(value) if value != 'animal'; memo}.join(" ")
     end
 end
+#
