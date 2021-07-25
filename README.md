@@ -2,7 +2,8 @@
 Este es el link a heroku
 
 
-* La palabra censurada es animal
+* La palabra censurada es:
+* image_tag en index linea 14 se usa para mostrar imagen en vez de link
 # animal
 
 This README would normally document whatever steps are necessary to get the

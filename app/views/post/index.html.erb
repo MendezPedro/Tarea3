@@ -1,4 +1,5 @@
 <h1 class="py-4">Posts</h1>
+<li><%= link_to 'Crear posts', post_dashboard_path %></li>
 <table class="table">
     <tr>
     <th>Title</th>
@@ -11,7 +12,7 @@
             <td><%= post.id %></td>
             <td><%= post.title %></td>
             <td><%= post.created_at %></td>
-            <td><%= image_tag post.image_url %></td>
+            <td><%= post.image_url %></td>
             <td><%= post.content %></td>
         </tr>
     <% end %>
