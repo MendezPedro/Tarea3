@@ -3,6 +3,8 @@ Este es el link a heroku
 
 
 * La palabra censurada es animal
+# animal
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
